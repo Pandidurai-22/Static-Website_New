@@ -4,6 +4,6 @@ cd "/c/Users/HP/Desktop/javascript basic projects/day 2(analog clock)/Static-web
 
 docker build -t static-wesbite .
 
-docker run -d -p 8081:80 static-website
+docker run -d -p 8081:80 static-website:latest
 
 docker ps
