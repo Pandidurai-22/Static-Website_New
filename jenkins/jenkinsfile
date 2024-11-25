@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from your Git repository
-                git 'https://github.com/Pandidurai-22/Static-website.git'
+                git 'https://github.com/Pandidurai-22/Static-Website_New.git'
             }
         }
 
