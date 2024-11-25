@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define environment variables if needed, such as server address, etc.
+        WEBSITE_DIR = '/var/www/static-website'
+        SERVER_URL = 'http://localhost:8081'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from your Git repository
+                git 'https://github.com/Pandidurai-22/Static-website.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Run the build script
+                sh './jenkins/script/build.sh'
+            }
+        }
+    }
+}
