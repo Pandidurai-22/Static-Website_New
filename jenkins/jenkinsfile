@@ -16,6 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the build script
+                sh 'chmod +x ./var/lib/jenkins/workspace/New_pipeline/jenkins/script/build.sh'
                 sh './jenkins/script/build.sh'
             }
         }
