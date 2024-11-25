@@ -1,6 +1,6 @@
 echo 'hello'
 
-cd /c/Users/HP/Desktop/javascript basic projects/day 2(analog clock)/Static-website
+cd "/c/Users/HP/Desktop/javascript basic projects/day 2(analog clock)/Static-website"
 
 docker build -t static-wesbite .
 
