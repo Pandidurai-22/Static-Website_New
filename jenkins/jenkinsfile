@@ -2,8 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Define environment variables if needed, such as server address, etc.
-        WEBSITE_DIR = '/var/www/static-website'
         SERVER_URL = 'http://localhost:8081'
     }
 
